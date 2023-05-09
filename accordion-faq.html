@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+
+<button class="accordion">Can I mute the videos?</button>
+<div class="panel">
+  <p>You can mute your PC/Laptop/device volume but, make sure your YouTube player volume is above 50%. Alternatively, plug in earphones or headphones while streaming.</p>
+</div>
+
+<button class="accordion">Can I stream from multiple browsers?</button>
+<div class="panel">
+  <p>Yes, but only to a maximum of  2 browsers.</p>
+</div>
+
+<button class="accordion">Can I stream with multiple devices?</button>
+<div class="panel">
+  <p>You can stream only in maximum 2 devices/2 YouTube accounts/1 IP address.</p>
+</div>
+
+<button class="accordion">Can I clear cache, search and watch history?</button>
+<div class="panel">
+  <p>Please avoid doing so especially on the 1st day/week after video release.</p>
+</div>
+
+<button class="accordion">Why can't I skip ADs</button>
+<div class="panel">
+  <p>ADs help PURPLE KISS revenue and source of income for them. You can skip after a minimum of 30s if the video is too long.</p>
+</div>
+
+<button class="accordion">Why can't I use a playlist?</button>
+<div class="panel">
+  <p>Playlist is considered low quality streams. You can use a playlist, recommended ONLY after the 1st 24 Hours to avoid the risk of the video counts filtered.</p>
+</div>
+
+<button class="accordion">Why can't I play the video that is recommended in the timeline?</button>
+<div class="panel">
+  <p>It’s not that you can’t, but it’s to recommend to a casual listener and people with the same interest clicking it instead. The fandom is encouraged to search the contents manually both on YouTube and Google and other search engine ‘Search bars’ to increase the algorithm and what is trending on YouTube that day.</p>
+</div>
+
+<button class="accordion">Can I use VPN?</button>
+<div class="panel">
+  <p>As much as possible, please avoid using VPN.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
